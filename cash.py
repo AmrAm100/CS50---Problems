@@ -1,9 +1,8 @@
-from cs50 import get_float
 
 count = 0
 while True:
-    change = get_float("Change owed: ")
-    if change > 0:
+    change = float(input("Change owed: "))
+     if change > 0:
         break
 cent  = round(change * 100)  
 
